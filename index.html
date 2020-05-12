@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patric Pereira</title>
+  <link rel="stylesheet" href="fonts/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#quad1">Sobre mim</a></li>
+        <li><a href="#resume-anchor">Resumo</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="root">
+    <div id="content">
+      <h1 class="title">Hello,</h1>
+      <h1 class="title">I am Patric Pereira</h1>
+      <h3 class="subtitle">Sou desenvolvedor com foco maior em desenvolvimento de aplicativos, estou na área de
+        tecnnologia desde 2017...</h3>
+    </div>
+  </div>
+  <div id="quad1"></div>
+  <div style="background-color: #FFF;">
+    <div id="root" style="padding-top: 60px; flex-direction: row; display: flex;">
+      <div id="photo">
+        <img src="/assets/img/image 1.png" class="img-profile" />
+      </div>
+      <div id="about">
+        <h1 class="title-resume">Sobre mim</h1>
+        <h3 class="subtitle-resume">Sou desenvolvedor full stack atuo com ReactJS, React Native e Node.js.</h3>
+        <p class="history">Entrei na área de tecnologia a alguns anos e iniciei na área de Quality Assurance - Q.A.,
+          onde aprendi muitas coisas e me desenvolvi profissionalmente. Atuei durante 3 anos como QA e migrei para a
+          área de desenvolvimento onde escolhi a stack javascript e atuo com o framework React. Meu maior foco é no
+          desenvolvimento mobile onde atuo com aplicativos hibridos, para iOs e Android.</p>
+        <div class="information">
+          <div class="row">
+            <div class="row-grid">
+              <span class="info-title">
+                <i class="fas fa-map-marker-alt space-icon"></i> Location
+              </span>
+              <em class="info-value">: Barueri</em>
+            </div>
+            <div class="row-grid">
+              <span class="info-title">
+                <i class="fas fa-calendar-alt space-icon"></i> Age
+              </span>
+              <em class="info-value">: 29</em>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-grid">
+              <span class="info-title">
+                <i class="fas fa-phone-alt space-icon"></i> Phone
+              </span>
+              <em class="info-value">: 11 9 6365-9778</em>
+            </div>
+            <div class="row-grid">
+              <span class="info-title">
+                <i class="fas fa-envelope space-icon"></i> E-mail
+              </span>
+              <em class="info-value">: patric.pereirafranca@gmail.com</em>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn-primary">Download CV</button>
+      </div>
+    </div>
+  </div>
+  <div id="quad2"></div>
+  <div id="resume-anchor" style="background-color: #000;">
+    <div id="root" style="padding-top: 10px; flex-direction: row; display: flex;">
+      <ul class="timeline">
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Freelancer</span>
+              <span class="time-wrapper"><span class="time">2013 - present</span></span>
+            </div>
+            <div class="desc">My current employment. Way better than the position before!</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Apple Inc.</span>
+              <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+            </div>
+            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Harvard University</span>
+              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+            </div>
+            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="quad3"></div>
+  <div id="contact"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script>
+    $('document').ready(() => {
+      const nav = $('#menu');
+
+      $(window).scroll(() => {
+        if ($(this).scrollTop() >= 25) {
+          nav.addClass('f-nav');
+        } else {
+          nav.removeClass('f-nav');
+        }
+      });
+
+      $('a[href^="#"]:not(a[href="#"])').click(function(){
+        $('html, body').animate({
+          scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 500);
+      
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
