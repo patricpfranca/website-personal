@@ -1,23 +1,9 @@
-$("document").ready(() => {
-  const nav = $("#menu");
+const el = document.getElementById("container");
 
-  $(window).scroll(() => {
-    if ($(this).scrollTop() >= 25) {
-      nav.addClass("f-nav");
-    } else {
-      nav.removeClass("f-nav");
-    }
-  });
-
-  $('a[href^="#"]:not(a[href="#"])').click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: $('[name="' + $.attr(this, "href").substr(1) + '"]').offset()
-          .top,
-      },
-      500
-    );
-
-    return false;
-  });
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop >= 100) {
+    el.classList.add("f-nav");
+  } else {
+    el.classList.remove("f-nav");
+  }
 });

@@ -32,29 +32,41 @@ button {
   cursor: pointer;
 }
 
-#menu {
+header #container {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   max-width: 1180px;
+  margin: auto;
 }
 
-#menu ul {
+header img {
+  width: 150px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
   list-style: none;
-  padding: 10px 0px;
 }
 
-#menu ul li {
-  display: inline-block;
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; 
+  padding: 1.6rem;
+  transition: all 250ms linear 0s;
 }
 
-#menu ul li a {
-  color: #fff;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: normal;
-  font-style: normal;
-  margin-left: 50px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 #content {
@@ -188,7 +200,7 @@ button {
   margin-right: 17px;
 }
 
-.f-nav{
+.f-nav {
   position: fixed;
   background-color: black;
   top: 0;
