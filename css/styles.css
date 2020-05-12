@@ -37,7 +37,6 @@ header #container {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1180px;
   margin: auto;
 }
 
@@ -61,12 +60,6 @@ header nav ul li a {
   font-size: 1rem; 
   padding: 1.6rem;
   transition: all 250ms linear 0s;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
 }
 
 #content {
