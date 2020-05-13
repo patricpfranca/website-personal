@@ -680,4 +680,8 @@ header nav ul li a {
     opacity: 1;
     background-color: transparent;
   }
+
+  .title {
+    line-height: 5px;
+  }
 }
