@@ -125,14 +125,14 @@ header nav ul li a {
   width: 85%;
 }
 
-.title-resume {
+.title-about {
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 29px;
 }
 
-.subtitle-resume {
+.subtitle-about {
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
@@ -208,6 +208,15 @@ header nav ul li a {
   padding-top: 35px;
   flex-direction: row;
   display: flex;
+}
+
+.title-resume {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
 }
 
 /* TIMELINE */
@@ -531,7 +540,7 @@ header nav ul li a {
   .one,
   .two,
   .three {
-    background-color: #fff;
+    background-color: #A1A2A2;
     height: 5px;
     width: 100%;
     margin: 6px auto;
