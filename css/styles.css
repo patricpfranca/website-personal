@@ -555,7 +555,7 @@ header nav ul li a {
     height: 100vh;
 
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.8;
 
     z-index: 10;
 
@@ -571,7 +571,7 @@ header nav ul li a {
   .menu-section.on .menu-toggle {
     position: absolute;
     right: 25px;
-    top: 15px;
+    top: 20px;
   }
 
   .menu-section.on .menu-toggle .one {
@@ -662,5 +662,13 @@ header nav ul li a {
 
   #content {
     width: 100%;
+  }
+
+  .f-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-color: transparent;
   }
 }
