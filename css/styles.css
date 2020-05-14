@@ -218,6 +218,10 @@ header nav ul li a {
   text-align: center;
 }
 
+.txt-type > .txt {
+  border-right: 0.1rem solid #777;
+}
+
 /* TIMELINE */
 
 .timeline {
