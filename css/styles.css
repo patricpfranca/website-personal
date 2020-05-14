@@ -811,13 +811,10 @@ header nav ul li a {
   }
 
   .f-nav {
-    position: fixed;
-    background-color: black;
     top: 0;
     left: 0;
     right: 0;
-    opacity: 0.4;
-    z-index: 900;
+    opacity: 1;
   }
 
   .menu-section.on nav ul a {
