@@ -786,3 +786,17 @@ header nav ul li a {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 440px) {
+  body {
+    background-color: turquoise;
+  }
+
+  #root {
+    margin: 0px 45px;
+  }
+
+  .img-profile {
+    height: 90%;
+  }
+}
