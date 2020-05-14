@@ -773,13 +773,11 @@ header nav ul li a {
   }
 
   .f-nav {
-    position: fixed;
-    background-color: black;
     top: 0;
     left: 0;
     right: 0;
-    opacity: 0.4;
-    z-index: 900;
+    opacity: 1;
+    background-color: transparent;
   }
 
   header nav ul li a {
@@ -801,10 +799,31 @@ header nav ul li a {
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .subtitle {
     font-size: 18px;
+  }
+
+  .f-nav {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: 900;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 2rem;
+    line-height: 3rem;
+    display: block;
+  }
+
+  .menu-section.on nav ul {
+    padding-left: 0px;
   }
 }
