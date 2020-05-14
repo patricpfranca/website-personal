@@ -47,7 +47,7 @@ TypeWriter.prototype.type = function () {
   setTimeout(() => this.type(), typeSpeed);
 };
 
-document.addEventListener("DOMContentLoaded", init);
+window.onload = () => init();
 
 function init() {
   const txtElement = document.querySelector(".txt-type");
