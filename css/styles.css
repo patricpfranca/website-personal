@@ -23,7 +23,7 @@ body {
   background: #ccc;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  background-image: url(https://github.com/patricpfranca/website-personal/blob/master/assets/img/back.png);
+  background-image: url(https://raw.githubusercontent.com/patricpfranca/website-personal/master/assets/img/back.png);
 }
 
 a {
