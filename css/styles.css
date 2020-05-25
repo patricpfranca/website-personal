@@ -23,6 +23,7 @@ body {
   background: #ccc;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  background-image: url(../assets/img/back.png);
 }
 
 a {
@@ -220,6 +221,117 @@ header nav ul li a {
 
 .txt-type > .txt {
   border-right: 0.1rem solid #777;
+}
+
+.container-form {
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  background: #f76e6e;
+  border-radius: 2px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+form button[type="submit"]:hover {
+  background: #f88b8b;
+}
+
+form {
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+form .form-box {
+  position: relative;
+}
+
+form .form-box input, form .form-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+}
+
+form .form-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ccc;
+  pointer-events: none;
+  transition: .5s;
+}
+
+form .form-box input:focus ~ label,
+form .form-box input:valid ~ label,
+form .form-box textarea:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+.container-form h1 {
+  text-align: center;
+}
+
+#footer {
+  background-color: #fff;
+}
+
+.content-footer {
+  background-color: turquoise;
+}
+
+.box-text h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.box-text {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.box-icons {
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.icon-color {
+  color: #fff;
+  font-size: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* TIMELINE */
@@ -787,6 +899,10 @@ header nav ul li a {
   header nav ul li a {
     font-size: 0.9rem;
   }
+
+  .box-text h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 440px) {
@@ -826,5 +942,18 @@ header nav ul li a {
 
   .menu-section.on nav ul {
     padding-left: 0px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .box-text h3 {
+    text-align: center;
+  }
+
+  .footer-box {
+    flex-wrap: wrap;
+    display: flex;
   }
 }
