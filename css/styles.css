@@ -228,6 +228,10 @@ header nav ul li a {
   padding: 20px;
   border-radius: 15px;
   width: 80%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 4px -2px #989898;
+  -moz-box-shadow: 0 4px 4px -2px #989898;
+  -webkit-box-shadow: 0 4px 4px -2px #989898;
 }
 
 #contact {
@@ -306,7 +310,7 @@ form .form-box textarea:focus ~ label {
 }
 
 .content-footer {
-  background-color: turquoise;
+  background-color: #292929;
 }
 
 .box-text h3 {
@@ -323,7 +327,6 @@ form .form-box textarea:focus ~ label {
 }
 
 .box-icons {
-  padding-bottom: 30px;
   display: flex;
 }
 
@@ -907,7 +910,7 @@ form .form-box textarea:focus ~ label {
 
 @media (max-width: 440px) {
   body {
-    background-color: turquoise;
+    background-color: #ccc;
   }
 
   #root {
@@ -955,5 +958,11 @@ form .form-box textarea:focus ~ label {
   .footer-box {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-footer {
+    padding-bottom: 40px;
   }
 }
